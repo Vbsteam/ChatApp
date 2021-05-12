@@ -10,6 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuickChatApp">
         <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

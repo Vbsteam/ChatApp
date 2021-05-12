@@ -4,37 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
-
+    tools:context=".RegistrationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:gravity="center"
-
         android:orientation="vertical">
-    <ImageView
-        android:layout_width="@dimen/_80sdp"
-        android:layout_height="@dimen/_80sdp"
-        android:background="@drawable/logo"/>
+
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="Welcome Back"
-            android:textSize="@dimen/_25sdp"
+            android:text="Create Account"
+            android:textSize="@dimen/_22sdp"
             android:gravity="center"
             android:textStyle="bold"
             android:fontFamily="@font/spartan_bold" />
 
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+
+
+
         <EditText
-            android:id="@+id/login_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email Address"
+            android:hint="Name"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_10sdp"
@@ -43,12 +49,24 @@
             android:textColor="@color/black"
             android:fontFamily="@font/spartan_regular"
             android:padding="@dimen/_10sdp"
-            android:inputType="textEmailAddress"
+            android:background="@drawable/edtext_shape"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/spartan_regular"
+            android:padding="@dimen/_10sdp"
             android:background="@drawable/edtext_shape"/>
 
 
         <EditText
-            android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
@@ -63,13 +81,28 @@
             android:padding="@dimen/_10sdp"
             android:background="@drawable/edtext_shape"/>
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confom Password"
+            android:inputType="textPassword"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/spartan_regular"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/edtext_shape"/>
+
 
         <TextView
-            android:id="@+id/signin_btn"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Sign In"
+            android:text="Sign Up"
             android:padding="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"
@@ -90,7 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
         android:orientation="horizontal">
 
         <TextView
@@ -98,15 +131,15 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/spartan_regular"
             android:textSize="@dimen/_16sdp"
-            android:text="New User "/>
+            android:text="Already Account? "/>
         <TextView
-            android:id="@+id/txt_signup"
+            android:id="@+id/txt_signin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/spartan_regular"
             android:textColor="@color/primary_purple"
             android:textSize="@dimen/_18sdp"
-            android:text="Sign Up"/>
+            android:text="Sign in"/>
 
 
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".LoginActivity">
 
 
@@ -35,6 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email Address"
+            android:textColorHint="@color/black"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_marginStart="@dimen/_10sdp"
@@ -52,6 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:textColorHint="@color/black"
             android:inputType="textPassword"
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_10sdp"
@@ -98,6 +101,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/spartan_regular"
             android:textSize="@dimen/_16sdp"
+            android:textColor="@color/black"
             android:text="New User "/>
         <TextView
             android:id="@+id/txt_signup"
